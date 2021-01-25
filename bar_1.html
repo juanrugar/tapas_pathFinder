@@ -1,47 +1,81 @@
 <html>
-    <head>
-        <title>The Tapas's Pathfinder</title>
-		<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="styles.css" />
-		<!-- GOOGLE API LICENSE; borrowed key from S Manzanera -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEB1plSzdQgv2oSvyvPT99BHmhJpG8Cys&v=3.exp"></script>
-		<script src="barmaps.js"></script>
 
-    </head>
-    <body>
-        <div class="header">
-            <p class="logo"><img src="img/logo.jpg" /></p>
-            
-        </div>
-        <div class="menu">
-            <ul class="menu-items">
-				<li class="menu-item"><a href="index.html" class="menu-item-text">Inicio</a></li>
-				<li class="menu-item"><a href="mapa.html" class="menu-item-text">Bares que tengo cerca</a></li>
-			</ul>
-        </div>
-        <div class="wrapper">
-			<h1>BAR 1 CASA MONTAÑA</h1>
-			<p>DESCRIPCIÓN  <strong>bodega tradicional</strong> diferente puede ser difícil. 
-				Con nuestro explorador de tapas cubrimos todos los establecimientos de la ciudad, pero nos gusta ofrecerte  
-				aquellos que destacan por su variedad, calidad, esquisitez y originalidad a la hora de elaborar las tapas.  
-			</p>
-			<div class="product-item">
-				<p class="product-item-img-container"><img class="product-item-img" src="macbook.jpg"/></p>
-				<h3>FOTO Casa Montaña</h3>
-				<p class="product-item-text">Nullam ac urna quis eros tristique semper vitae eget nisl.</p>
-			</div>
-			<div class="product-item">
-				<p class="product-item-img-container"><img class="product-item-img" src="macbook.jpg"/></p>
-				<h3>FOTO PRODUCTO 1</h3>
-				<p class="product-item-text">Nullam ac urna quis eros tristique semper vitae eget nisl.</p>
-			</div>
-			<hr/>
-			<h2>Ubicación y reservas</h2>
-			<p>Calle Doctor tal, nº 34</p> 
-			<p>96 423 44 55 / 638 423 123</p>
-			
-			<div id="map-canvas"></div>
+<head>
+	<title>The Tapas's Pathfinder</title>
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" />
+	<script src="bars.js"></script>
+	<!-- GOOGLE API LICENSE; borrowed key from S Manzanera -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEB1plSzdQgv2oSvyvPT99BHmhJpG8Cys&v=3.exp"></script>
+	<script>
+		var map;
+		function initialize() {
+			var bar1 = bares[0];
+			var mapOptions = {
+				minZoom: 16,
+				backgroundColor: "#ff00ff",
+				zoom: 20,
+				center: new google.maps.LatLng(bar1.latitude, bar1.longitude),
+				fullscreenControl: false
+			};
+			map = new google.maps.Map(document.getElementById('map-canvas'),
+				mapOptions);
+
+			var point = new google.maps.LatLng(bar1.latitude, bar1.longitude);
+			var pOptions = {
+				position: point,
+				map: map,
+				title: bar1.name
+			};
+			var marker = new google.maps.Marker(pOptions);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<p class="logo"><img src="img/logo.jpg" /></p>
+
+	</div>
+	<div class="menu">
+		<ul class="menu-items">
+			<li class="menu-item"><a href="index.html" class="menu-item-text">Inicio</a></li>
+			<li class="menu-item"><a href="mapa.html" class="menu-item-text">Bares que tengo cerca</a></li>
+		</ul>
+	</div>
+	<div class="wrapper">
+		<h1>Casa Solís</h1>
+		<p>DESCRIPCIÓN <strong>bodega tradicional</strong> diferente puede ser difícil.
+			Con nuestro explorador de tapas cubrimos todos los establecimientos de la ciudad, pero nos gusta ofrecerte
+			aquellos que destacan por su variedad, calidad, esquisitez y originalidad a la hora de elaborar las tapas.
+		</p>
+		<div class="product-item">
+			<p class="product-item-img-container"><img class="product-item-img" src="macbook.jpg" /></p>
+			<h3>FOTO Casa Montaña</h3>
+			<p class="product-item-text">Nullam ac urna quis eros tristique semper vitae eget nisl.</p>
 		</div>
+		<hr />
+		<div class="product-item">
+			<p class="product-item-img-container"><img class="product-item-img" src="macbook.jpg" /></p>
+			<h3>FOTO Casa Montaña</h3>
+			<p class="product-item-text">Nullam ac urna quis eros tristique semper vitae eget nisl.</p>
+		</div>
+		<div class="product-item">
+			<p class="product-item-img-container"><img class="product-item-img" src="macbook.jpg" /></p>
+			<h3>FOTO Casa Montaña</h3>
+			<p class="product-item-text">Nullam ac urna quis eros tristique semper vitae eget nisl.</p>
+		</div>
+		<hr/r>
+		<h2>Ubicación y reservas</h2>
+		<p>Calle Doctor tal, nº 34</p>
+		<p>96 423 44 55 / 638 423 123</p>
 
-    </body>
+		<div id="map-canvas"></div>
+	</div>
+
+</body>
+
 </html>

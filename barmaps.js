@@ -1,31 +1,47 @@
 var map;
 function initialize() {
     var mapOptions = {
-        minZoom: 14,
-        backgroundColor: "#00ff00",
-        zoom: 16,
-        center: new google.maps.LatLng(41.39230085135724, 2.175667404444539),
-        fullscreenControl: false
+        minZoom: 12,
+        backgroundColor: "#ff00ff",
+        zoom: 12,
+        center: new google.maps.LatLng(39.47443583365297, -0.37546019758579496),
+        fullscreenControl: true
     };
-    map = new google.maps.Map(document.getElementById('map-canvas'),
-        mapOptions);
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-    var product = {
-        lat: 41.39167304441456,
-        lng: 2.1758145415515173,
-        name: 'Silla vieja',
-        img: 'p-chair.jpg',
-        desc: 'Nunc ante quam, malesuada et rhoncus quis, hendrerit id orci.'
-    };
+    alert(bares.length + ' bares de tapas cerca de ti');
 
-    var point = new google.maps.LatLng(product.lat, product.lng);
+    for (var i = 0; i < bares.length; i++) {
+        createMarker(bares[i]);
+    }
+
+}
+
+function createMarker(tapasBar) {
+    var point = new google.maps.LatLng(tapasBar.latitude, tapasBar.longitude);
     var pOptions = {
         position: point,
         map: map,
-        title: product.name
+        title: tapasBar.name
     };
     var marker = new google.maps.Marker(pOptions);
 
+    var infoWindowOptions = {
+        content: '<div class="iw-wrapper">'
+            + '<h3>' + tapasBar.name + '</h3>'
+            + '<p>' + tapasBar.streetName + ', nº ' + tapasBar.streetNumber + '</p>'
+            + '<p>' + tapasBar.phone + '</p>'
+            + '<p>Tapa Estrella: <strong>' + tapasBar.toptapa + '</strong></p>'
+            + '<img src="' + tapasBar.src + '">'
+            + '<a href="' + tapasBar.ficha + '">Ir a la ficha</a>'
+            + '</div>'
+    };
+
+    var window = new google.maps.InfoWindow(infoWindowOptions);
+
+    google.maps.event.addListener(marker, 'click', function (event) {
+        window.open(map, marker);
+    });
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);

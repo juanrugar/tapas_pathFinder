@@ -121,61 +121,61 @@ var bares = [{
 {
     "id": "11",
     "name": "Bodegueta Valeriola",
-    "latitude": "39.47070386331477",
-    "longitude": "-0.32911578333566655",
-    "streetName": "Carrer de Carles Ros",
-    "streetNumber": "102",
-    "phone": "96 143 63 25",
-    "toptapa": "Creïlles a la pebrera",
+    "latitude": "39.47322510139384", 
+    "longitude": "-0.3905404435916793",
+    "streetName": "Carrer Pérez Escrich",
+    "streetNumber": "13",
+    "phone": "96 363 25 39",
+    "toptapa": "Ronyons al conyac",
     "src": "img/logo.jpg",
-    "ficha": "bar_5.html"
+    "ficha": "bar_11.html"
 },
 {
     "id": "12",
     "name": "Delicias de Al-Magrib ",
-    "latitude": "39.47070386331477",
-    "longitude": "-0.32911578333566655",
-    "streetName": "Carrer de Carles Ros",
-    "streetNumber": "102",
-    "phone": "96 143 63 25",
-    "toptapa": "Creïlles a la pebrera",
+    "latitude": "39.461622246012176", 
+    "longitude": "-0.39186735977125875",
+    "streetName": "Carrer de Beat Nicolau Factor",
+    "streetNumber": "38",
+    "phone": "96 914 36 32",
+    "toptapa": "Aceitunas del Atlas",
     "src": "img/logo.jpg",
-    "ficha": "bar_5.html"
+    "ficha": "bar_12.html"
 },
 {
     "id": "13",
     "name": "Casa Hong",
-    "latitude": "39.47070386331477",
-    "longitude": "-0.32911578333566655",
-    "streetName": "Carrer de Carles Ros",
-    "streetNumber": "102",
-    "phone": "96 143 63 25",
-    "toptapa": "Creïlles a la pebrera",
+    "latitude": "39.488045384436006", 
+    "longitude": "-0.38018351159895397",
+    "streetName": "Carrer de Luis Crumiere",
+    "streetNumber": "3",
+    "phone": "96 543 39 19",
+    "toptapa": "Costillas Kon-Pao",
     "src": "img/logo.jpg",
-    "ficha": "bar_5.html"
+    "ficha": "bar_13.html"
 },
 {
     "id": "14",
     "name": "Tia Conxita",
-    "latitude": "39.47070386331477",
-    "longitude": "-0.32911578333566655",
-    "streetName": "Carrer de Carles Ros",
-    "streetNumber": "102",
+    "latitude": "39.446631889188765", 
+    "longitude": "-0.3327212610327336",
+    "streetName": "Carrer de Santa Pola",
+    "streetNumber": "5",
     "phone": "96 143 63 25",
-    "toptapa": "Creïlles a la pebrera",
+    "toptapa": "Clotxines al vapor",
     "src": "img/logo.jpg",
-    "ficha": "bar_5.html"
+    "ficha": "bar_14.html"
 },
 {
     "id": "15",
     "name": "Ivan i Núria",
-    "latitude": "39.47070386331477",
-    "longitude": "-0.32911578333566655",
-    "streetName": "Carrer de Carles Ros",
-    "streetNumber": "102",
-    "phone": "96 143 63 25",
-    "toptapa": "Creïlles a la pebrera",
+    "latitude": "39.457690602039655", 
+    "longitude": "-0.3607667536692596",
+    "streetName": "Avinguda de la Plata",
+    "streetNumber": "48",
+    "phone": "96 303 94 17",
+    "toptapa": "Pintxo de llaminetes de tonyina amb vinagre roig",
     "src": "img/logo.jpg",
-    "ficha": "bar_5.html"
-}
-];
+    "ficha": "bar_15.html"
+}];
+

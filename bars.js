@@ -4,9 +4,9 @@ var bares = [{
     "latitude": "39.47051037149336",
     "longitude": "-0.3779290388812907",
     "streetName": "Carrer de la Sang",
-    "streetNumber": "7-5",
+    "streetNumber": "7",
     "phone": "96 342 33 44",
-    "toptapa": "Cecina de Calamocha",
+    "toptapa": "Pimientos rellenos",
     "src": "img/logo.jpg",
     "ficha": "bar_1.html"
 },

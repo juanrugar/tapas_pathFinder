@@ -7,7 +7,7 @@ var bares = [{
     "streetNumber": "7",
     "phone": "96 342 33 44",
     "toptapa": "Pimientos rellenos",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_pimientos_rellenos.jpg",
     "ficha": "bar_1.html"
 },
 {
@@ -19,7 +19,7 @@ var bares = [{
     "streetNumber": "2",
     "phone": "96 412 35 47",
     "toptapa": "Esgarraet amb Olives",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_esgarraet.jpg",
     "ficha": "bar_2.html"
 },
 {
@@ -31,7 +31,7 @@ var bares = [{
     "streetNumber": "4",
     "phone": "96 372 85 27",
     "toptapa": "Xoriço de Concentaina",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_chorizo.jpg",
     "ficha": "bar_3.html"
 },
 {
@@ -43,7 +43,7 @@ var bares = [{
     "streetNumber": "121",
     "phone": "96 294 26 75",
     "toptapa": "Mandonguilles d'abaetxo",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_croquetas.jpg",
     "ficha": "bar_4.html"
 },
 {
@@ -55,7 +55,7 @@ var bares = [{
     "streetNumber": "102",
     "phone": "96 143 63 25",
     "toptapa": "Creïlles a la pebrera",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_patatas.jpg",
     "ficha": "bar_5.html"
 },
 {
@@ -66,8 +66,8 @@ var bares = [{
     "streetName": "Avinguda del Doctor Tomàs Sala",
     "streetNumber": "34",
     "phone": "96 378 36 32",
-    "toptapa": "Pimientos rellenos",
-    "src": "img/logo.jpg",
+    "toptapa": "Zarajos",
+    "src": "img/tapa_zarajos.jpg",
     "ficha": "bar_6.html"
 },
 {
@@ -79,7 +79,7 @@ var bares = [{
     "streetNumber": "22",
     "phone": "96 435 32 51",
     "toptapa": "Sashimi de atún con cama de oliva",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_atun.jpg",
     "ficha": "bar_7.html"
 },
 {
@@ -91,7 +91,7 @@ var bares = [{
     "streetNumber": "42",
     "phone": "96 436 32 57",
     "toptapa": "Kimchi del país",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_kimchi.jpg",
     "ficha": "bar_8.html"
 },
 {
@@ -103,7 +103,7 @@ var bares = [{
     "streetNumber": "3",
     "phone": "96 431 33 95",
     "toptapa": "Solomillo",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_solomillo.jpg",
     "ficha": "bar_9.html"
 },
 {
@@ -115,7 +115,7 @@ var bares = [{
     "streetNumber": "165",
     "phone": "96 341 13 25",
     "toptapa": "Anguila de la rambla",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_calamares.jpg",
     "ficha": "bar_10.html"
 },
 {
@@ -127,7 +127,7 @@ var bares = [{
     "streetNumber": "13",
     "phone": "96 363 25 39",
     "toptapa": "Ronyons al conyac",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_rinones.jpg",
     "ficha": "bar_11.html"
 },
 {
@@ -139,7 +139,7 @@ var bares = [{
     "streetNumber": "38",
     "phone": "96 914 36 32",
     "toptapa": "Aceitunas del Atlas",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_aceitunas.jpg",
     "ficha": "bar_12.html"
 },
 {
@@ -151,7 +151,7 @@ var bares = [{
     "streetNumber": "3",
     "phone": "96 543 39 19",
     "toptapa": "Costillas Kon-Pao",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_carne.jpg",
     "ficha": "bar_13.html"
 },
 {
@@ -163,7 +163,7 @@ var bares = [{
     "streetNumber": "5",
     "phone": "96 143 63 25",
     "toptapa": "Clotxines al vapor",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_clochinas.jpg",
     "ficha": "bar_14.html"
 },
 {
@@ -175,7 +175,7 @@ var bares = [{
     "streetNumber": "48",
     "phone": "96 303 94 17",
     "toptapa": "Pintxo de llaminetes de tonyina amb vinagre roig",
-    "src": "img/logo.jpg",
+    "src": "img/tapa_atun.jpg",
     "ficha": "bar_15.html"
 }];
 

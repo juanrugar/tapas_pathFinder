@@ -1,32 +1,43 @@
 <html>
-    <head>
-        <title>The Tapas's Pathfinder</title>
-		<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css" />
-        <!-- file with the object containing the array with the bars --> 
-        <script src="bars.js"></script>
-        <!-- GOOGLE API LICENSE; borrowed key from S Manzanera -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEB1plSzdQgv2oSvyvPT99BHmhJpG8Cys&v=3.exp"></script>
+
+<head>
+    <title>The Tapas's Pathfinder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- file with the object containing the array with the bars -->
+    <script src="bars.js"></script>
+    <!-- GOOGLE API LICENSE; borrowed key from S Manzanera -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEB1plSzdQgv2oSvyvPT99BHmhJpG8Cys&v=3.exp"></script>
+
+    <script src="ruta.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://img.icons8.com/color/48/000000/tapas.png" />
+        <img src="https://img.icons8.com/material/48/000000/tapas.png" />
+        <img src="https://img.icons8.com/dusk/48/000000/tapas.png" />
+
+    </div>
+    <div class="menu">
+        <ul class="menu-items">
+            <li class="menu-item"><a href="index.html" class="menu-item-text">Inicio</a></li>
+            <li class="menu-item"><a href="mapa.html" class="menu-item-text">Bares que tengo cerca</a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
         
-        <script src="ruta.js"></script>
-    </head>
-    <body>
-        <div class="header">
-            <p class="logo"><img src="img/logo.jpg" /></p>
-            
-        </div>
-        <div class="menu">
-            <ul class="menu-items">
-				<li class="menu-item"><a href="index.html" class="menu-item-text">Inicio</a></li>
-				<li class="menu-item"><a href="mapa.html" class="menu-item-text">Bares que tengo cerca</a></li>
-			</ul>
-        </div>
-        <div class="wrapper">
-            <h1>Como llegar hasta aquí</h1>
+        <h1>Bodegueta Valeriola</h1>
+        <hr />
+        
+        <div id="map-canvas"></div>
 
-            <div id="map-canvas"></div>
+    </div>
 
-        </div>
+</body>
 
-    </body>
 </html>

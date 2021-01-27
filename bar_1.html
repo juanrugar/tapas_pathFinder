@@ -3,6 +3,8 @@
 <head>
 	<title>The Tapas's Pathfinder</title>
 	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css" />
 	<script src="bars.js"></script>
 	<!-- GOOGLE API LICENSE; borrowed key from S Manzanera -->
@@ -17,9 +19,9 @@
 				zoom: 20,
 				center: new google.maps.LatLng(bar1.latitude, bar1.longitude),
 				fullscreenControl: false,
-				title:"Casa Solís"
+				title: "Casa Solís"
 			};
-			map = new google.maps.Map(document.getElementById('map-canvas'),
+			map = new google.maps.Map(document.getElementById('map-canvas-detail'),
 				mapOptions);
 
 			var point = new google.maps.LatLng(bar1.latitude, bar1.longitude);
@@ -38,7 +40,9 @@
 
 <body>
 	<div class="header">
-		<p class="logo"><img src="img/logo.jpg" /></p>
+		<img src="https://img.icons8.com/color/48/000000/tapas.png" />
+		<img src="https://img.icons8.com/material/48/000000/tapas.png" />
+		<img src="https://img.icons8.com/dusk/48/000000/tapas.png" />
 
 	</div>
 	<div class="menu">
@@ -49,26 +53,32 @@
 	</div>
 	<div class="wrapper">
 		<h1>Casa Solís</h1>
-		<p>Pese a su aspecto se trata de una <strong>bodega tradicional</strong> Lorem ipsum dolor sit amet, 
-			consectetur adipiscing elit. Nunc sollicitudin vehicula odio ac sagittis. Aenean sem tortor, vestibulum et malesuada vitae, facilisis eget massa. Aliquam sed sapien quis erat posuere pharetra non at elit. Proin id magna pharetra, mollis odio in, mollis mi. Sed sit amet lectus sapien. Mauris hendrerit consectetur felis, in finibus nulla molestie in. Vivamus odio neque, consectetur vel lorem vel, pretium hendrerit diam. 
+		<p>Pese a su aspecto se trata de una <strong>bodega tradicional</strong> Lorem ipsum dolor sit amet,
+			consectetur adipiscing elit. Nunc sollicitudin vehicula odio ac sagittis. Aenean sem tortor, vestibulum et
+			malesuada vitae, facilisis eget massa. Aliquam sed sapien quis erat posuere pharetra non at elit. Proin id
+			magna pharetra, mollis odio in, mollis mi. Sed sit amet lectus sapien. Mauris hendrerit consectetur felis,
+			in finibus nulla molestie in. Vivamus odio neque, consectetur vel lorem vel, pretium hendrerit diam.
 		</p>
 		<div class="product-item">
-			<p class="product-item-img-container"><img class="product-item-img" src="img/bar_1.jpg" /></p>
-			<h3>Tradición Renovada</h3>
+			<p class="product-item-img-container"><img class="product-item-img" src="img/bar_2.jpg" /></p>
+			<h2>Tradición Renovada</h2>
 			<p class="product-item-text">El espléndido aspecto actual del establecimiento, antigua venta de vinos.</p>
 		</div>
 
 		<div class="product-item">
-			<p class="product-item-img-container"><img class="product-item-img" src="img/tapa_pimientos_rellenos.jpg" /></p>
-			<h3>Tapa Maestra: Pimiento de piquillo relleno</h3>
+			<p class="product-item-img-container"><img class="product-item-img" src="img/tapa_pimientos_rellenos.jpg" />
+			</p>
+			<h2>Tapa Maestra: Pimiento de piquillo relleno</h2>
 			<p class="product-item-text">La especialidad de la casa ofrecida con hasta cinco rellenos distintos.</p>
 		</div>
 		<hr />
-		<h2>Ubicación y reservas</h2>
-		<p>Carrer de la Sang, 7</p>
-		<p>Tel.: 96 342 33 44</p>
+		<div class="product-item-contact">
+				<h2>Ubicación y reservas</h2>
+				<p>Carrer de la Sang, 7</p>
+				<p>Tel.: 96 342 33 44</p>
+		</div>
 
-		<div id="map-canvas"></div>
+		<div id="map-canvas-detail"></div>
 	</div>
 
 </body>

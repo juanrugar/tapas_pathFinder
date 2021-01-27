@@ -5,7 +5,7 @@ function initialize() {
     var mapOptions = {
         minZoom: 12,
         backgroundColor: "#ff00ff",
-        zoom: 16,
+        zoom: 15,
         center: new google.maps.LatLng(39.470295466864826, -0.3851893111122075),
         fullscreenControl: true
     };
@@ -20,6 +20,15 @@ function initialize() {
     };
     var userLoc = new google.maps.Marker(pOptions1);
 
+    var infoWindowOpt1 = {
+        content: '<div class="iw-wrapper">'
+        + '<h2>Estás aquí</h2>'
+        + '</div>'
+    };
+
+    var startP = new google.maps.InfoWindow(infoWindowOpt1);
+    startP.open(map, userLoc);
+
     var point2 = new google.maps.LatLng(39.47322510139384, -0.3905404435916793);//End point, bar
     var pOptions2 = {
         position: point2,
@@ -27,6 +36,15 @@ function initialize() {
         title: "Tu destino"
     };
     var destBar = new google.maps.Marker(pOptions2);
+
+    var infoWindowOpt2 = {
+        content: '<div class="iw-wrapper">'
+        + '<h2>Tu destino</h2>'
+        + '</div>'
+    };
+
+    var endP = new google.maps.InfoWindow(infoWindowOpt2);
+    endP.open(map, destBar);
 
     var polylinePath = [
         //starting point, user's location

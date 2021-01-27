@@ -25,10 +25,10 @@ ul,ol{list-style:none}
 				div.header img.right {padding-left: 60px; padding-bottom:5px;}
 				div.header h2 {text-align:center; padding:20px; }
 			
-			div.menu { position:fixed; left:0; top:100px; right:0; height:30px; text-align:center; z-index:100; background-color:#552700; }
+			div.menu { position:fixed; left:0; top:100px; right:0; height:40px; text-align:center; z-index:100; background-color:#552700; }
 				div.menu ul { padding-top:7px; }
  					div.menu ul li { display:inline-block; margin-right:20px; }
-					 div.menu ul li a { font-weight: bold; text-decoration:none; background-color:transparent; color:#d49a6a }
+					 div.menu ul li a { font-size: 20px; font-weight: bold; text-decoration:none; background-color:transparent; color:#d49a6a }
 					 div.menu ul li a:hover { color:#ffd1aa; }
 
 			.wrapper {  width:920px; padding:20px; margin:auto; margin-top:130px; margin-bottom:150px; background-color:#ffd1aa; border:solid 1px #d3d3d3;; border-top:none; }
@@ -38,23 +38,32 @@ ul,ol{list-style:none}
                 box-shadow: 4px 6px 5px 0px rgb(79, 69, 67); }
 			.product-image { width:150px; height:150px; border-radius:50%; }
 
-			.product-item { float:left; position:relative; padding:10px 10px 10px 225px; margin-bottom:20px; margin-right:20px; width:200px; height:135px; border:solid 1px #ff0000; border-radius:10px 0; }
-				.product-item:hover { background-color:#804616; }
+			.product-item { float:left; position:relative; padding:10px 10px 10px 225px; margin-bottom:20px; margin-right:20px; width:200px; height:200px; background-color: #AAA039; border-radius:10px 0; }
+				.product-item:hover { background-color:#D4CB6A; }
 			.product-item-img-container { position:absolute; top:10px; left:10px; }
 			.product-item-img { width:200px; }
 			.product-item-text { margin-bottom:0; }
+			.product-item-contact {float:left; position:relative; padding:10px 10px 10px 50px; margin-bottom:20px; margin-right:20px; width:300px; height:200px; background-color: #AAA039; border-radius:10px 0; }
 
 			.product-main-image { float:right; margin-left:20px; }
+
 			.discount {
-               	position:fixed; 
-				width:200px; 
-				height:135px; 
-				margin-left:auto;
+				
+               	position:fixed;
+				width:250px; 
+				height:250px; 
+				margin-left: 1230px ;
+				margin-top: 300px;
                 border: solid 1px #ff0000; 
-                border-radius:10px 0; 
+				border-radius:10px 0; 
+				background-color: #554D00;
 			}
-			.discount img { position: fixed; height:150px;}
-						
+			.discount h3 { margin: 5px ; padding-left: 5px}
+			.discount img { height:150px; margin: 10px 0px 10px 40px;}
+			.discount p { padding-left: 5px;  }
+			
 			#map-canvas { height:500px; margin-bottom:20px; }
+
+			#map-canvas-detail { height:300px; margin-bottom:20px; }
 
 		

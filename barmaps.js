@@ -30,13 +30,11 @@ function createMarker(tapasBar) {
 
     var infoWindowOptions = {
         content: '<div class="iw-wrapper">'
-            + '<h3>' + tapasBar.name + '</h3>'
-            + '<p>' + tapasBar.streetName + ', nº ' + tapasBar.streetNumber + '</p>'
-            + '<p>' + tapasBar.phone + '</p>'
-            + '<p>Tapa Estrella: <strong>' + tapasBar.toptapa + '</strong></p>'
-            + '<img src="' + tapasBar.src + '">'
-            + '<a href="' + tapasBar.ficha + '">Ir a la ficha</a>'
-            +  '</div>'
+        + '<h3>' + tapasBar.name + '</h3>'
+        + '<p>' + tapasBar.streetName + ', nº ' + tapasBar.streetNumber + ',<br> tlf.: '+ tapasBar.phone + '</p>'
+        + '<p>Tapa estrella: ' + tapasBar.toptapa + '</p><br><img src="' + tapasBar.src + '">'
+        + '<h4></4><br><a href="' + tapasBar.ficha + '">Ir a la ficha</a>'
+        + '</div>'
     };
 
     var window = new google.maps.InfoWindow(infoWindowOptions);
@@ -61,12 +59,9 @@ function getThere(tapasBar) {
     var infoWindowOptions3 = {
         content: '<div class="iw-wrapper">'
         + '<h3>' + tapasBar.name + '</h3>'
-        + '<p>' + tapasBar.streetName + ', nº ' + tapasBar.streetNumber + '</p>'
-        + '<p>' + tapasBar.phone + '</p>'
-        + '<p>Tapa Estrella: <strong>' + tapasBar.toptapa + '</strong></p>'
-        + '<img src="' + tapasBar.src + '">'
-        + '<a href="' + tapasBar.ficha + '">Ir a la ficha</a>'
-        + '<h4><a href="getThere.html">Como llegar hasta aquí</a></4>'
+        + '<p>' + tapasBar.streetName + ', nº ' + tapasBar.streetNumber + ',<br> tlf.: '+ tapasBar.phone + '</p>'
+        + '<p>Tapa estrella: ' + tapasBar.toptapa + '</p><br><img src="' + tapasBar.src + '">'
+        + '<h4><a href="getThere.html">Como llegar hasta aquí</a></4><br><a href="' + tapasBar.ficha + '">Ir a la ficha</a>'
         + '</div>'
     };
 
@@ -75,4 +70,5 @@ function getThere(tapasBar) {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
 

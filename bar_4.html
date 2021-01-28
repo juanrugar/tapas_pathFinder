@@ -9,17 +9,18 @@
 	<script src="bars.js"></script>
 	<!-- GOOGLE API LICENSE; borrowed key from S Manzanera -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEB1plSzdQgv2oSvyvPT99BHmhJpG8Cys&v=3.exp"></script>
-	<script>
+    <script src="bars.js"></script>
+    <script>
 		var map;
 		function initialize() {
-			var bar1 = bares[0];
+			var bar1 = bares[3];
 			var mapOptions = {
 				minZoom: 16,
 				backgroundColor: "#ff00ff",
-				zoom: 20,
+				zoom: 18,
 				center: new google.maps.LatLng(bar1.latitude, bar1.longitude),
 				fullscreenControl: false,
-				title: "Casa Solís"
+				title: "La barca del Tio Tomeu"
 			};
 			map = new google.maps.Map(document.getElementById('map-canvas-detail'),
 				mapOptions);
@@ -34,7 +35,7 @@
 		}
 
 		google.maps.event.addDomListener(window, 'load', initialize);
-
+        
 	</script>
 </head>
 
@@ -52,30 +53,30 @@
 		</ul>
 	</div>
 	<div class="wrapper">
-		<h1>Casa Solís</h1>
-		<p>Pese a su aspecto se trata de una <strong>bodega tradicional</strong> Lorem ipsum dolor sit amet,
+		<h1>La barca del Tio Tomeu</h1>
+		<p>Situado cerca de la playa, este <strong>antiguo puesto de venta de pescado</strong> Lorem ipsum dolor sit amet,
 			consectetur adipiscing elit. Nunc sollicitudin vehicula odio ac sagittis. Aenean sem tortor, vestibulum et
 			malesuada vitae, facilisis eget massa. Aliquam sed sapien quis erat posuere pharetra non at elit. Proin id
 			magna pharetra, mollis odio in, mollis mi. Sed sit amet lectus sapien. Mauris hendrerit consectetur felis,
 			in finibus nulla molestie in. Vivamus odio neque, consectetur vel lorem vel, pretium hendrerit diam.
 		</p>
 		<div class="product-item">
-			<p class="product-item-img-container"><img class="product-item-img" src="img/bar_2.jpg" /></p>
-			<h2>Tradición Renovada</h2>
-			<p class="product-item-text">El espléndido aspecto actual del establecimiento, antigua venta de vinos.</p>
+			<p class="product-item-img-container"><img class="product-item-img" src="img/bar_5.jpg" /></p>
+			<h2>Saga de pescadores</h2>
+			<p class="product-item-text">Para disfrutar al sol y el aire del mar.</p>
 		</div>
 
 		<div class="product-item">
-			<p class="product-item-img-container"><img class="product-item-img" src="img/tapa_pimientos_rellenos.jpg" />
+			<p class="product-item-img-container"><img class="product-item-img" src="img/tapa_croquetas.jpg" />
 			</p>
-			<h2>Tapa Maestra: Pimiento de piquillo relleno</h2>
-			<p class="product-item-text">La especialidad de la casa ofrecida con hasta cinco rellenos distintos.</p>
+			<h2>Tapa Estrella: Mandonguilles d'abaetxo</h2>
+			<p class="product-item-text">Un plato esquisito con bacalao desmigado y un rebozado fino que casi se deshace en la boca.</p>
 		</div>
 		<hr />
 		<div class="product-item-contact">
 				<h2>Ubicación y reservas</h2>
-				<p>Carrer de la Sang, 7</p>
-				<p>Tel.: 96 342 33 44</p>
+				<p>Carrer d'Isabel de Villena, 121</p>
+				<p>Tel.: 96 294 26 75</p>
 		</div>
 
 		<div id="map-canvas-detail"></div>

@@ -30,9 +30,10 @@ function createMarker(tapasBar) {
 
     var infoWindowOptions = {
         content: '<div class="iw-wrapper">'
-        + '<h3>' + tapasBar.name + '</h3>'
+        + '<h2>' + tapasBar.name + '</h2>'
         + '<p>' + tapasBar.streetName + ', nº ' + tapasBar.streetNumber + ',<br> tlf.: '+ tapasBar.phone + '</p>'
-        + '<p>Tapa estrella: ' + tapasBar.toptapa + '</p><br><img src="' + tapasBar.src + '">'
+        + '<p>Tapa estrella: ' + tapasBar.toptapa + '</p>'
+        + '<img src="' + tapasBar.src + '">'
         + '<h4></4><br><a href="' + tapasBar.ficha + '">Ir a la ficha</a>'
         + '</div>'
     };
@@ -58,10 +59,10 @@ function getThere(tapasBar) {
 
     var infoWindowOptions3 = {
         content: '<div class="iw-wrapper">'
-        + '<h3>' + tapasBar.name + '</h3>'
+        + '<h2>' + tapasBar.name + '</h2>'
         + '<p>' + tapasBar.streetName + ', nº ' + tapasBar.streetNumber + ',<br> tlf.: '+ tapasBar.phone + '</p>'
         + '<p>Tapa estrella: ' + tapasBar.toptapa + '</p><br><img src="' + tapasBar.src + '">'
-        + '<h4><a href="getThere.html">Como llegar hasta aquí</a></4><br><a href="' + tapasBar.ficha + '">Ir a la ficha</a>'
+        + '<h4><a href="getThere.html">¿Cómo llegar a este bar?</a></h4><br><a href="' + tapasBar.ficha + '">Ir a la ficha</a>'
         + '</div>'
     };
 

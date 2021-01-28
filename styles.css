@@ -23,7 +23,7 @@ ul,ol{list-style:none}
 				div.header p { position:absolute; top:50%; left:20px; margin-top:-35px; background-color: #804616; }
 				div.header img {padding-left: 60px; padding-top:5px;}
 				div.header img.right {padding-left: 60px; padding-bottom:5px;}
-				div.header h2 {text-align:center; padding:20px; }
+				h2.title {margin:auto; text-align:center; font-size: 30px; font-style: italic;}
 			
 			div.menu { position:fixed; left:0; top:100px; right:0; height:40px; text-align:center; z-index:100; background-color:#552700; }
 				div.menu ul { padding-top:7px; }
@@ -33,7 +33,7 @@ ul,ol{list-style:none}
 
 			.wrapper {  width:920px; padding:20px; margin:auto; margin-top:130px; margin-bottom:150px; background-color:#ffd1aa; border:solid 1px #d3d3d3;; border-top:none; }
 			.more-info { font-size:18px; }
-			.product-detail { font-size:20px; width:400px; padding:20px 20px 40px 20px; margin:auto; margin-bottom:20px; border:solid 10px #ff0000; color:#ffffff; background-color:#d49a6a; -webkit-box-shadow: 4px 6px 5px 0px rgb(79, 69, 67);
+			.product-detail { font-size:20px; width:400px; padding:20px 20px 40px 20px; margin:auto; margin-bottom:20px; border:solid 10px #ff0000; color:#ffffff; background-color:#181310; -webkit-box-shadow: 4px 6px 5px 0px rgb(79, 69, 67);
                 -moz-box-shadow: 4px 6px 5px 0px rgb(223, 13, 13);
                 box-shadow: 4px 6px 5px 0px rgb(79, 69, 67); }
 			.product-image { width:150px; height:150px; border-radius:50%; }

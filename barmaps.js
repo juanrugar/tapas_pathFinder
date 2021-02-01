@@ -34,7 +34,7 @@ function createMarker(tapasBar) {
         + '<p>' + tapasBar.streetName + ', nº ' + tapasBar.streetNumber + ',<br> tlf.: '+ tapasBar.phone + '</p>'
         + '<p>Tapa estrella: ' + tapasBar.toptapa + '</p>'
         + '<img src="' + tapasBar.src + '">'
-        + '<h4></4><br><a href="' + tapasBar.ficha + '">Ir a la ficha</a>'
+        + '<h4><br><a href="' + tapasBar.ficha + '">Ir a la ficha</a>'
         + '</div>'
     };
 
@@ -46,6 +46,7 @@ function createMarker(tapasBar) {
     
 }
 
+//Creates a special marker with a link to the user-bar route displayed at getThere.html
 function getThere(tapasBar) {
     //Reach that bar marker & infowindow
     
@@ -69,7 +70,7 @@ function getThere(tapasBar) {
     var barFlag = new google.maps.InfoWindow(infoWindowOptions3);
     barFlag.open(map, destBar);
 }
-
+//Exec the initialize()
 google.maps.event.addDomListener(window, 'load', initialize);
 
 

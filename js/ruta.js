@@ -1,3 +1,7 @@
+/*  Originally I used this file to draw manually the route between the user's position to the selected bar;
+then afterwards I managed to create a route using the DirectionsService from google.maps API, which is contained 
+on the bar_directions.js file    */
+
 var map;
 function initialize() {
 
@@ -11,7 +15,8 @@ function initialize() {
     };
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions); //END of map
 
-    //Starting point of route 
+    
+    //Starting point of "route" (a.k.a. polyline) with infowindows for the two points 
     var point1 = new google.maps.LatLng(39.46744058606083, -0.37698061606782485);//Starting point, railway station
     var pOptions1 = {
         position: point1,
@@ -22,8 +27,8 @@ function initialize() {
 
     var infoWindowOpt1 = {
         content: '<div class="iw-wrapper">'
-        + '<h2>Estás aquí</h2>'
-        + '</div>'
+            + '<h2>Estás aquí</h2>'
+            + '</div>'
     };
 
     var startP = new google.maps.InfoWindow(infoWindowOpt1);
@@ -39,8 +44,8 @@ function initialize() {
 
     var infoWindowOpt2 = {
         content: '<div class="iw-wrapper">'
-        + '<h2>Tu destino</h2>'
-        + '</div>'
+            + '<h2>Tu destino</h2>'
+            + '</div>'
     };
 
     var endP = new google.maps.InfoWindow(infoWindowOpt2);
@@ -71,7 +76,7 @@ function initialize() {
     };
     var polyline = new google.maps.Polyline(polylineOpt);
 
-    //Probably better set a route... i.e.,  DirectionsRequest and so on. 
-}
+    //Probably better set a route... i.e.,  DirectionsRequest and so on.
+} 
 
 google.maps.event.addDomListener(window, 'load', initialize);

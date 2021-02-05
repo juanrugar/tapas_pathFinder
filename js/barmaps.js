@@ -9,8 +9,7 @@ function initialize() {
     };
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-    getThere(bares[10]); 
-
+    getThere(bares[10]); //see below
     alert('Hemos encontrado ' + bares.length + ' bares de tapas cerca de ti');
 
     for (var i = 0; i < bares.length; i++) {
@@ -19,6 +18,7 @@ function initialize() {
         
 }
 
+//creates all markers 
 function createMarker(tapasBar) {
     var point = new google.maps.LatLng(tapasBar.latitude, tapasBar.longitude);
     var pOptions = {

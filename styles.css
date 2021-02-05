@@ -50,17 +50,17 @@ ul,ol{list-style:none}
 			.discount {
 				
                	position:fixed;
-				width:250px; 
-				height:250px; 
-				margin-left: 1230px ;
-				margin-top: 300px;
+				bottom: 2;
+				right: 10;
+				width: 150px; 
+				height: 150px;
                 border: solid 1px #ff0000; 
 				border-radius:10px 0; 
 				background-color: #554D00;
 			}
-			.discount h3 { margin: 5px ; padding-left: 5px}
-			.discount img { height:150px; margin: 10px 0px 10px 40px;}
-			.discount p { padding-left: 5px;  }
+			.discount h4 { padding:5px; text-align: center; }
+			.discount img { display: block; margin-left:auto; margin-right: auto; width: 50%;}
+			.discount p { padding-left: 5px;  text-align: left; }
 			
 			#map-canvas { height:500px; margin-bottom:20px; }
 

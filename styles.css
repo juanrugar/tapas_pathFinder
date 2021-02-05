@@ -59,7 +59,7 @@ ul,ol{list-style:none}
 			}
 			.discount h4 { padding:5px; text-align: center; text-shadow: 2px 2px 5px grey;}
 			.discount img { display: block; margin-left:auto; margin-right: auto; width: 50%;}
-			.discount p {  text-align: center; font-style: oblique;}
+			.discount p { text-align: center; font-style: oblique;}
 			
 			#map-canvas { height:500px; margin-bottom:20px; }
 

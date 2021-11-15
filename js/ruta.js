@@ -1,5 +1,5 @@
 /*  Originally I used this file to draw manually the route between the user's position to the selected bar;
-then afterwards I managed to create a route using the DirectionsService from google.maps API, which is contained 
+then afterwards I managed to create a route using the DirectionsService class from google.maps API, which is contained 
 on the bar_directions.js file    */
 
 var map;

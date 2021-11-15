@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Bares</title>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    
+        <!-- Jquery CDN, https://code.jquery.com/ -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
+        <!-- Include Handlebars from a CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    
+    
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/singleBarMap.js"></script>
+        <script src="js/bars.js"></script>
+    
+        <!-- GOOGLE API LICENSE; borrowed key from S Manzanera -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEB1plSzdQgv2oSvyvPT99BHmhJpG8Cys&v=3.exp"></script>
+        
+    </head>
+
+    <body>
+        <div class="container">
+
+            <!-- the page title -->
+            <div class="page-header">
+              <h1>Bares</h1>
+            </div>
+        </div>
+
+        <script id="album-template" type="text/x-handlebars-template">
+
+            <div class="row">
+              {{#each images}}
+              <div class="col-xs-12 col-md-3">
+               <div class="thumbnail" data-id="{{@index}}">
+                  <img class="crop-img" src="{{src}}" alt=""/>
+      
+                   <div class="author">
+                      <h3> {{title}} </h3>
+                      <p> {{author}} </p>
+                   </div>
+                </div>
+      
+                </div> <!-- / col -->
+                {{/each}}
+            </div> <!-- / row -->
+          </script>
+
+            <script type="text/javascript">
+            // get the source code for our two template
+            // and compile them
+            var source   = $("#album-template").html();
+            var template = Handlebars.compile(source);
+
+            var html = template(data);
+            $('#content').html(html);
+
+            </script>
+    </body>
+</html>

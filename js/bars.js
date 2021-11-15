@@ -1,4 +1,5 @@
-var bares = [{
+var data ={bares: [
+    {
     "id": "1",
     "name": "Casa Solís",
     "latitude": "39.47051037149336",
@@ -8,7 +9,7 @@ var bares = [{
     "phone": "96 342 33 44",
     "toptapa": "Pimientos rellenos",
     "src": "img/tapa_pimientos_rellenos.jpg",
-    "ficha": "bar_1.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "2",
@@ -20,7 +21,7 @@ var bares = [{
     "phone": "96 412 35 47",
     "toptapa": "Esgarraet amb Olives",
     "src": "img/tapa_esgarraet.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "3",
@@ -32,7 +33,7 @@ var bares = [{
     "phone": "96 372 85 27",
     "toptapa": "Xoriço de Concentaina",
     "src": "img/tapa_chorizo.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "4",
@@ -44,7 +45,7 @@ var bares = [{
     "phone": "96 294 26 75",
     "toptapa": "Mandonguilles d'abaetxo",
     "src": "img/tapa_croquetas.jpg",
-    "ficha": "bar_4.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "5",
@@ -56,7 +57,7 @@ var bares = [{
     "phone": "96 143 63 25",
     "toptapa": "Creïlles a la pebrera",
     "src": "img/tapa_patatas.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "6",
@@ -68,7 +69,7 @@ var bares = [{
     "phone": "96 378 36 32",
     "toptapa": "Zarajos",
     "src": "img/tapa_zarajos.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "7",
@@ -80,7 +81,7 @@ var bares = [{
     "phone": "96 435 32 51",
     "toptapa": "Sashimi de atún con cama de oliva",
     "src": "img/tapa_atun.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "8",
@@ -92,7 +93,7 @@ var bares = [{
     "phone": "96 436 32 57",
     "toptapa": "Kimchi del país",
     "src": "img/tapa_kimchi.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "9",
@@ -104,7 +105,7 @@ var bares = [{
     "phone": "96 431 33 95",
     "toptapa": "Solomillo",
     "src": "img/tapa_solomillo.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "10",
@@ -116,7 +117,7 @@ var bares = [{
     "phone": "96 341 13 25",
     "toptapa": "Anguila de la rambla",
     "src": "img/tapa_calamares.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "11",
@@ -128,7 +129,7 @@ var bares = [{
     "phone": "96 363 25 39",
     "toptapa": "Ronyons al conyac",
     "src": "img/tapa_rinones.jpg",
-    "ficha": "bar_11.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "12",
@@ -140,7 +141,7 @@ var bares = [{
     "phone": "96 914 36 32",
     "toptapa": "Aceitunas del Atlas",
     "src": "img/tapa_aceitunas.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "13",
@@ -152,7 +153,7 @@ var bares = [{
     "phone": "96 543 39 19",
     "toptapa": "Costillas Kon-Pao",
     "src": "img/tapa_carne.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "14",
@@ -164,7 +165,7 @@ var bares = [{
     "phone": "96 143 63 25",
     "toptapa": "Clotxines al vapor",
     "src": "img/tapa_clochinas.jpg",
-    "ficha": "mapa.html"
+    "ficha": "bar-template.html"
 },
 {
     "id": "15",
@@ -176,6 +177,7 @@ var bares = [{
     "phone": "96 303 94 17",
     "toptapa": "Pintxo de llaminetes de tonyina amb vinagre roig",
     "src": "img/tapa_atun.jpg",
-    "ficha": "mapa.html"
-}];
+    "ficha": "bar-template.html"
+}
+]};
 

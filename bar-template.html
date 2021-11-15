@@ -5,38 +5,21 @@
 	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
+	<!-- Jquery CDN, https://code.jquery.com/ -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	
+	<!-- Include Handlebars from a CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+
 	<link rel="stylesheet" href="css/styles.css" />
+	<script src="js/singleBarMap.js"></script>
 	<script src="js/bars.js"></script>
+
 	<!-- GOOGLE API LICENSE; borrowed key from S Manzanera -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEB1plSzdQgv2oSvyvPT99BHmhJpG8Cys&v=3.exp"></script>
-    
-    <script>
-		var map;
-		function initialize() {
-			var bar1 = bares[3];
-			var mapOptions = {
-				minZoom: 16,
-				backgroundColor: "#ff00ff",
-				zoom: 18,
-				center: new google.maps.LatLng(bar1.latitude, bar1.longitude),
-				fullscreenControl: false,
-				title: bar1.name
-			};
-			map = new google.maps.Map(document.getElementById('map-canvas-detail'),
-				mapOptions);
-
-			var point = new google.maps.LatLng(bar1.latitude, bar1.longitude);
-			var pOptions = {
-				position: point,
-				map: map,
-				title: bar1.name
-			};
-			var marker = new google.maps.Marker(pOptions);
-		}
-
-		google.maps.event.addDomListener(window, 'load', initialize);
-        
-	</script>
+	
 </head>
 
 <body>
@@ -52,35 +35,38 @@
 			<li class="menu-item"><a href="mapa.html" class="menu-item-text">Bares que tengo cerca</a></li>
 		</ul>
 	</div>
+
+	<script id="bar_detail" type="text/x-handlebars-template">
 	<div class="wrapper">
-		<h1>La barca del Tio Tomeu</h1>
-		<p>Situado cerca de la playa, este <strong>antiguo puesto de venta de pescado</strong> Lorem ipsum dolor sit amet,
+		<h1>{{name}}</h1>
+		<p>Pese a su aspecto se trata de una <strong>bodega tradicional</strong> Lorem ipsum dolor sit amet,
 			consectetur adipiscing elit. Nunc sollicitudin vehicula odio ac sagittis. Aenean sem tortor, vestibulum et
 			malesuada vitae, facilisis eget massa. Aliquam sed sapien quis erat posuere pharetra non at elit. Proin id
 			magna pharetra, mollis odio in, mollis mi. Sed sit amet lectus sapien. Mauris hendrerit consectetur felis,
 			in finibus nulla molestie in. Vivamus odio neque, consectetur vel lorem vel, pretium hendrerit diam.
 		</p>
 		<div class="product-item">
-			<p class="product-item-img-container"><img class="product-item-img" src="img/bar_5.jpg" /></p>
-			<h2>Saga de pescadores</h2>
-			<p class="product-item-text">Para disfrutar al sol y el aire del mar.</p>
+			<p class="product-item-img-container"><img class="product-item-img" src="img/bar_2.jpg" /></p>
+			<h2>Tradición Renovada</h2>
+			<p class="product-item-text">El espléndido aspecto actual del establecimiento, antigua venta de vinos.</p>
 		</div>
 
 		<div class="product-item">
-			<p class="product-item-img-container"><img class="product-item-img" src="img/tapa_croquetas.jpg" />
+			<p class="product-item-img-container"><img class="product-item-img" src="img/tapa_pimientos_rellenos.jpg" />
 			</p>
-			<h2>Tapa estrella: Mandonguilles d'abaetxo</h2>
-			<p class="product-item-text">Un plato esquisito con bacalao desmigado y un rebozado fino que casi se deshace en la boca.</p>
+			<h2>Tapa estrella: {{toptapa}}</h2>
+			<p class="product-item-text">La especialidad de la casa ofrecida con hasta cinco rellenos distintos.</p>
 		</div>
 		<hr />
 		<div class="product-item-contact">
 				<h2>Ubicación y reservas</h2>
-				<p>Carrer d'Isabel de Villena, 121</p>
-				<p>Tel.: 96 294 26 75</p>
+				<p>Carrer de la Sang, 7</p>
+				<p>Tel.: 96 342 33 44</p>
 		</div>
 
 		<div id="map-canvas-detail"></div>
 	</div>
+</script>
 
 </body>
 
